@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sy="http://schemas.android.com/apk/res-auto">
+<item android:icon="@android:drawable/ic_menu_delete"
+    android:title="删除"
+    sy:showAsAction="always"
+    android:id="@+id/menu_delete"></item>
+
+    <!--actionViewClass:搜索显示页面,值引用的系统的，系统会自动识别
+        若将showAsAction 设置为never   则不能实现搜索功能-->
+<item android:icon="@android:drawable/ic_menu_search"
+    android:title="搜索"
+    sy:showAsAction="never"
+    sy:actionViewClass="android.support.v7.widget.SearchView"
+    android:id="@+id/menu_search"></item>
+
+    <!--actionProviderClass:分享，只有共享的东西才可以分享Provider,值引用的系统的，系统会自动识别-->
+<item
+    android:icon="@android:drawable/ic_menu_share"
+    sy:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+    android:title="分享"
+    sy:showAsAction="never"
+    android:id="@+id/menu_share"></item>
+
+</menu>

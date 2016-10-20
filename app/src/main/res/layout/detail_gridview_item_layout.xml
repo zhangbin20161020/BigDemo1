@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:id="@+id/detail_imageView"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:layout_below="@id/detail_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_description"
+        android:layout_alignRight="@id/detail_imageView"
+        android:layout_alignLeft="@id/detail_imageView"/>
+    <TextView
+        android:layout_below="@id/detail_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_price"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_alignLeft="@id/detail_imageView"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@id/detail_description"
+        android:layout_toRightOf="@id/detail_price"
+        android:layout_marginLeft="5dp"
+       android:id="@+id/detail_originPrice"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_alignRight="@id/detail_imageView"
+        android:layout_below="@id/detail_description"
+        android:layout_toRightOf="@id/detail_originPrice"
+        android:id="@+id/detail_sales"/>
+</RelativeLayout>

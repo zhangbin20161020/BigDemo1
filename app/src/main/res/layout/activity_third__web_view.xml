@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sy.com.high_shoppingdemo.myactivity.Third_WebViewActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/web_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.Toolbar>
+
+
+    <WebView
+        android:id="@+id/web_webView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/web_toolBar"></WebView>
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_alignBottom="@id/web_webView"
+        android:id="@+id/web_progressBar"
+        android:max="100" />
+
+    <RelativeLayout
+        android:layout_below="@id/web_webView"
+        android:id="@+id/web_relativeLayout"
+        android:layout_above="@+id/web_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/web_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/web_shoucang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="加入收藏" />
+
+        <Button
+            android:id="@+id/web_shopping"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="加入购物车" />
+
+        <Button
+            android:id="@+id/web_buy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="立即购买" />
+    </LinearLayout>
+
+</RelativeLayout>
